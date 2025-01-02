@@ -69,7 +69,7 @@ const Events = ({
             <div className="flex items-center">
               <img className="h-10 w-10 rounded-full" src={profile} alt="" />
               <a
-                href="https://github.com/nworiekingslee"
+                href="https://github.com/thekingslee"
                 target="_blank"
                 rel="noreferrer"
                 className="flex ml-4 "
@@ -89,7 +89,7 @@ const Events = ({
               </a>
 
               <a
-                href="https://twitter.com/nworiekingslee"
+                href="https://twitter.com/thekingslee"
                 target="_blank"
                 rel="noreferrer"
                 className="flex ml-4 "
@@ -156,7 +156,7 @@ const Events = ({
           <p className="text-slate-500 dark:text-dim-body text-sm mx-auto px-3 font-semibold">
             {"</"} Find portfolio source code{" "}
             <a
-              href="https://github.com/nworiekingslee/kingslee"
+              href="https://github.com/thekingslee/kingslee"
               target="_blank"
               rel="noreferrer"
             >

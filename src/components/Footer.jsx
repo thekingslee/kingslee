@@ -11,7 +11,7 @@ const Footer = ({ userTheme }) => {
     <div className=" max-w-full text-center ">
       <div className="flex w-[110px] justify-between mx-auto mb-2 ">
         <a
-          href="https://github.com/nworiekingslee"
+          href="https://github.com/thekingslee"
           target="_blank"
           rel="noreferrer"
         >
@@ -22,7 +22,7 @@ const Footer = ({ userTheme }) => {
           )}
         </a>
         <a
-          href="https://twitter.com/nworiekingslee"
+          href="https://twitter.com/thekingslee"
           target="_blank"
           rel="noreferrer"
         >
@@ -48,7 +48,7 @@ const Footer = ({ userTheme }) => {
       <p className="text-slate-500 dark:text-dim-body text-sm mx-auto font-semibold">
         {"</"} Find source code{" "}
         <a
-          href="https://github.com/nworiekingslee/kingslee"
+          href="https://github.com/thekingslee/kingslee"
           target="_blank"
           rel="noreferrer"
         >
