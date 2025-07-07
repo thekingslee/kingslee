@@ -34,9 +34,13 @@ const HomeBoi = ({ userTheme }) => {
       </div>
 
       <div className="relative z-10 max-w-[650px] mx-auto text-center px-6">
-        <a href="../images/kingslee.jpg">
+        <a
+          href={profile}
+          download="kingslee-profile.jpg"
+          className="cursor-pointer inline-block"
+        >
           <img
-            className="item w-[120px] md:w-[180px] mx-auto rounded-full mb-4 md:mb-8"
+            className="item w-[120px] md:w-[180px] mx-auto rounded-full mb-4 md:mb-8 hover:opacity-80 transition-opacity"
             src={profile}
             alt="Nworie Kingslee"
           />
