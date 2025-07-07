@@ -1,5 +1,6 @@
 import React, { useEffect, useLayoutEffect, useRef } from 'react';
 import Button from '../components/Button.jsx';
+import Footer from '../components/Footer.jsx';
 import profile from '../images/kingslee.jpg';
 import profileVideo from '../images/videos/profile-video.mp4';
 
@@ -72,6 +73,11 @@ const HomeBoi = ({ userTheme }) => {
             cta="See my adventures"
           />
         </div>
+      </div>
+
+      {/* Footer within the container */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+        <Footer userTheme={userTheme} />
       </div>
     </div>
   );
