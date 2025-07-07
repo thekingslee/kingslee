@@ -1,10 +1,10 @@
-import React from "react";
-import github from "../images/icons/Github.svg";
-import twitter from "../images/icons/Twitter.svg";
-import email from "../images/icons/Email.svg";
-import githubDark from "../images/icons/dark/Github.svg";
-import twitterDark from "../images/icons/dark/Twitter.svg";
-import emailDark from "../images/icons/dark/Email.svg";
+import React from 'react';
+import github from '../images/icons/Github.svg';
+import twitter from '../images/icons/Twitter.svg';
+import email from '../images/icons/Email.svg';
+import githubDark from '../images/icons/dark/Github.svg';
+import twitterDark from '../images/icons/dark/Twitter.svg';
+import emailDark from '../images/icons/dark/Email.svg';
 
 const Footer = ({ userTheme }) => {
   return (
@@ -15,7 +15,7 @@ const Footer = ({ userTheme }) => {
           target="_blank"
           rel="noreferrer"
         >
-          {userTheme === "dark" ? (
+          {userTheme === 'dark' ? (
             <img src={githubDark} alt="Kingslee GitHub" />
           ) : (
             <img src={github} alt="Kingslee GitHub" />
@@ -26,7 +26,7 @@ const Footer = ({ userTheme }) => {
           target="_blank"
           rel="noreferrer"
         >
-          {userTheme === "dark" ? (
+          {userTheme === 'dark' ? (
             <img src={twitterDark} alt="Kingslee Twitter" />
           ) : (
             <img src={twitter} alt="Kingslee Twitter" />
@@ -37,7 +37,7 @@ const Footer = ({ userTheme }) => {
           target="_blank"
           rel="noreferrer"
         >
-          {userTheme === "dark" ? (
+          {userTheme === 'dark' ? (
             <img src={emailDark} alt="send a mail to Kingslee" />
           ) : (
             <img src={email} alt="send a mail to Kingslee" />
@@ -46,14 +46,14 @@ const Footer = ({ userTheme }) => {
       </div>
 
       <p className="text-slate-500 dark:text-dim-body text-sm mx-auto font-semibold">
-        {"</"} Find source code{" "}
+        {'</'} Find source code{' '}
         <a
           href="https://github.com/thekingslee/kingslee"
           target="_blank"
           rel="noreferrer"
         >
           <span className="text-dark dark:text-imagination">here</span>
-          {"/>"}
+          {'/>'}
         </a>
       </p>
     </div>
