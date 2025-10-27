@@ -1,14 +1,14 @@
-import React from "react";
-import PinnedContainer from "../components/PinnedContainer";
-import ActivitiesContainer from "../components/ActivitiesContainer";
-import profile from "../images/kingslee.jpg";
-import github from "../images/icons/Github.svg";
-import twitter from "../images/icons/Twitter.svg";
-import email from "../images/icons/Email.svg";
-import githubDark from "../images/icons/dark/Github.svg";
-import twitterDark from "../images/icons/dark/Twitter.svg";
-import emailDark from "../images/icons/dark/Email.svg";
-import Nav from "../components/Nav";
+import React from 'react';
+import PinnedContainer from '../components/PinnedContainer';
+import ActivitiesContainer from '../components/ActivitiesContainer';
+import profile from '../images/kingslee.jpg';
+import github from '../images/icons/Github.svg';
+import twitter from '../images/icons/Twitter.svg';
+import email from '../images/icons/Email.svg';
+import githubDark from '../images/icons/dark/Github.svg';
+import twitterDark from '../images/icons/dark/Twitter.svg';
+import emailDark from '../images/icons/dark/Email.svg';
+import Nav from '../components/Nav';
 
 const Projects = ({
   projects,
@@ -23,7 +23,7 @@ const Projects = ({
   const pinned = projects.filter((project) => project.fields.Pinned);
   const activities = projects.filter(
     (project) =>
-      (project.fields.Type === "Code" || project.fields.Type === "Design") &&
+      (project.fields.Type === 'Code' || project.fields.Type === 'Design') &&
       !project.fields.Pinned
   );
 
@@ -37,29 +37,36 @@ const Projects = ({
               <p className="text-[42px] text-dark dark:text-imagination font-semibold w-80 leading-tight">
                 Hey there, I'm <span className="fancy-text">Kingslee</span>
               </p>
-              {userTheme === "dark" ? (
+              {userTheme === 'dark' ? (
                 <p className="item mt-4 font-normal mb-6 text-dim-body md:text-[16px]  text-[14px]">
-                  An <span className="highlight">Opensource champion</span> and <span className="highlight">Software developer</span> with a
+                  An <span className="highlight">Opensource champion</span> and{' '}
+                  <span className="highlight">Software developer</span> with a
                   passion for
-                  <span className="highlight "> design</span>. When I'm not
-                  coding, you'll find me shaking up the scene in southeastern
-                  Nigeria,{" "}
+                  <span className="highlight "> AI & Machine Learning</span>.
+                  When I'm not coding, you'll find me shaking up the scene in
+                  southeastern Nigeria,{' '}
                   <span className="highlight ">
                     making tech more accessible
-                  </span>{" "}
+                  </span>{' '}
                   one event at a time.
                 </p>
               ) : (
                 <p className="item mt-4 font-normal mb-6 text-dim-body md:text-[16px]  text-[14px]">
-                   An  <span className="darker font-medium">Opensource champion</span> and{" "}
-                  <span className="darker font-medium">Software developer</span>{" "}
+                  An{' '}
+                  <span className="darker font-medium">
+                    Opensource champion
+                  </span>{' '}
+                  and{' '}
+                  <span className="darker font-medium">Software developer</span>{' '}
                   with a passion for
-                  <span className="darker font-medium"> design</span>. When I'm
-                  not coding, you'll find me shaking up the scene in
-                  southeastern Nigeria,{" "}
+                  <span className="darker font-medium">
+                    AI & Machine Learning
+                  </span>
+                  . When I'm not coding, you'll find me shaking up the scene in
+                  southeastern Nigeria,{' '}
                   <span className="darker font-medium">
                     making tech more accessible
-                  </span>{" "}
+                  </span>{' '}
                   one event at a time.
                 </p>
               )}
@@ -76,7 +83,7 @@ const Projects = ({
                 rel="noreferrer"
                 className="flex ml-4 "
               >
-                {userTheme === "dark" ? (
+                {userTheme === 'dark' ? (
                   <img
                     className="h-6 w-6"
                     src={githubDark}
@@ -84,7 +91,7 @@ const Projects = ({
                   />
                 ) : (
                   <img className="h-6 w-6" src={github} alt="Kingslee GitHub" />
-                )}{" "}
+                )}{' '}
                 <span className="ml-1 text-dark-secondary dark:text-imagination">
                   GitHub
                 </span>
@@ -96,7 +103,7 @@ const Projects = ({
                 rel="noreferrer"
                 className="flex ml-4 "
               >
-                {userTheme === "dark" ? (
+                {userTheme === 'dark' ? (
                   <img
                     className="h-6 w-6"
                     src={twitterDark}
@@ -108,7 +115,7 @@ const Projects = ({
                     src={twitter}
                     alt="Kingslee twitter"
                   />
-                )}{" "}
+                )}{' '}
                 <span className="ml-1 text-dark-secondary dark:text-imagination">
                   Twitter
                 </span>
@@ -120,7 +127,7 @@ const Projects = ({
                 rel="noreferrer"
                 className="flex ml-4 "
               >
-                {userTheme === "dark" ? (
+                {userTheme === 'dark' ? (
                   <img
                     className="h-6 w-6"
                     src={emailDark}
@@ -128,7 +135,7 @@ const Projects = ({
                   />
                 ) : (
                   <img className="h-6 w-6" src={email} alt="Kingslee email" />
-                )}{" "}
+                )}{' '}
                 <span className="ml-1 text-dark-secondary  dark:text-imagination">
                   Email
                 </span>
@@ -156,14 +163,14 @@ const Projects = ({
 
           {/* <PeopleContainer people={people} userTheme={userTheme} /> */}
           <p className="text-slate-500 dark:text-dim-body text-sm mx-auto px-3 font-semibold">
-            {"</"} Find portfolio source code{" "}
+            {'</'} Find portfolio source code{' '}
             <a
               href="https://github.com/thekingslee/kingslee"
               target="_blank"
               rel="noreferrer"
             >
               <span className="text-dark dark:text-imagination">here</span>
-              {"/>"}
+              {'/>'}
             </a>
           </p>
         </div>

@@ -1,14 +1,14 @@
-import React from "react";
-import ActivitiesContainer from "../components/ActivitiesContainer";
-import TalkContainer from "../components/TalkContainer";
-import profile from "../images/kingslee.jpg";
-import github from "../images/icons/Github.svg";
-import twitter from "../images/icons/Twitter.svg";
-import email from "../images/icons/Email.svg";
-import githubDark from "../images/icons/dark/Github.svg";
-import twitterDark from "../images/icons/dark/Twitter.svg";
-import emailDark from "../images/icons/dark/Email.svg";
-import Nav from "../components/Nav";
+import React from 'react';
+import ActivitiesContainer from '../components/ActivitiesContainer';
+import TalkContainer from '../components/TalkContainer';
+import profile from '../images/kingslee.jpg';
+import github from '../images/icons/Github.svg';
+import twitter from '../images/icons/Twitter.svg';
+import email from '../images/icons/Email.svg';
+import githubDark from '../images/icons/dark/Github.svg';
+import twitterDark from '../images/icons/dark/Twitter.svg';
+import emailDark from '../images/icons/dark/Email.svg';
+import Nav from '../components/Nav';
 
 const Events = ({
   projects,
@@ -22,7 +22,7 @@ const Events = ({
   onTalkLeave,
 }) => {
   const articles = projects.filter(
-    (project) => project.fields.Type === "Article"
+    (project) => project.fields.Type === 'Article'
   );
 
   return (
@@ -35,29 +35,34 @@ const Events = ({
               <p className="text-[42px] text-dark dark:text-imagination font-semibold w-80 leading-tight">
                 Hey there, I'm <span className="fancy-text">Kingslee</span>
               </p>
-              {userTheme === "dark" ? (
+              {userTheme === 'dark' ? (
                 <p className="item mt-4 font-normal mb-6 text-dim-body md:text-[16px]  text-[14px]">
-                  A <span className="highlight">Software developer</span> with a
+                  An <span className="highlight">Opensource champion</span> and{' '}
+                  <span className="highlight">Software developer</span> with a
                   passion for
-                  <span className="highlight "> design</span>. When I'm not
+                  <span className="highlight "> AI & ML</span>. When I'm not
                   coding, you'll find me shaking up the scene in southeastern
-                  Nigeria,{" "}
+                  Nigeria,{' '}
                   <span className="highlight ">
                     making tech more accessible
-                  </span>{" "}
+                  </span>{' '}
                   one event at a time.
                 </p>
               ) : (
                 <p className="item mt-4 font-normal mb-6 text-dim-body md:text-[16px]  text-[14px]">
-                  A{" "}
-                  <span className="darker font-medium">Software developer</span>{" "}
+                  An{' '}
+                  <span className="darker font-medium">
+                    Opensource champion
+                  </span>{' '}
+                  and{' '}
+                  <span className="darker font-medium">Software developer</span>{' '}
                   with a passion for
-                  <span className="darker font-medium"> design</span>. When I'm
+                  <span className="darker font-medium">AI & ML</span>. When I'm
                   not coding, you'll find me shaking up the scene in
-                  southeastern Nigeria,{" "}
+                  southeastern Nigeria,{' '}
                   <span className="darker font-medium">
                     making tech more accessible
-                  </span>{" "}
+                  </span>{' '}
                   one event at a time.
                 </p>
               )}
@@ -74,7 +79,7 @@ const Events = ({
                 rel="noreferrer"
                 className="flex ml-4 "
               >
-                {userTheme === "dark" ? (
+                {userTheme === 'dark' ? (
                   <img
                     className="h-6 w-6"
                     src={githubDark}
@@ -82,7 +87,7 @@ const Events = ({
                   />
                 ) : (
                   <img className="h-6 w-6" src={github} alt="Kingslee GitHub" />
-                )}{" "}
+                )}{' '}
                 <span className="ml-1 text-dark-secondary dark:text-imagination">
                   GitHub
                 </span>
@@ -94,7 +99,7 @@ const Events = ({
                 rel="noreferrer"
                 className="flex ml-4 "
               >
-                {userTheme === "dark" ? (
+                {userTheme === 'dark' ? (
                   <img
                     className="h-6 w-6"
                     src={twitterDark}
@@ -106,7 +111,7 @@ const Events = ({
                     src={twitter}
                     alt="Kingslee twitter"
                   />
-                )}{" "}
+                )}{' '}
                 <span className="ml-1 text-dark-secondary dark:text-imagination">
                   Twitter
                 </span>
@@ -118,7 +123,7 @@ const Events = ({
                 rel="noreferrer"
                 className="flex ml-4 "
               >
-                {userTheme === "dark" ? (
+                {userTheme === 'dark' ? (
                   <img
                     className="h-6 w-6"
                     src={emailDark}
@@ -126,7 +131,7 @@ const Events = ({
                   />
                 ) : (
                   <img className="h-6 w-6" src={email} alt="Kingslee email" />
-                )}{" "}
+                )}{' '}
                 <span className="ml-1 text-dark-secondary  dark:text-imagination">
                   Email
                 </span>
@@ -154,14 +159,14 @@ const Events = ({
           />
           {/* <PeopleContainer people={people} userTheme={userTheme} /> */}
           <p className="text-slate-500 dark:text-dim-body text-sm mx-auto px-3 font-semibold">
-            {"</"} Find portfolio source code{" "}
+            {'</'} Find portfolio source code{' '}
             <a
               href="https://github.com/thekingslee/kingslee"
               target="_blank"
               rel="noreferrer"
             >
-              <span className="text-dark dark:text-imagination">here</span>{" "}
-              {"/>"}
+              <span className="text-dark dark:text-imagination">here</span>{' '}
+              {'/>'}
             </a>
           </p>
         </div>
