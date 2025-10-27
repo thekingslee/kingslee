@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCTA from "./ProjectCTA";
+import fallBackImg from "../images/kingslee.jpg"
 
 const PinnedProject = ({ project, userTheme, onEnter, onLeave }) => {
   const {
@@ -23,9 +24,12 @@ const PinnedProject = ({ project, userTheme, onEnter, onLeave }) => {
         onMouseLeave={onLeave}
         className="p w-full bg-white dark:bg-dim dark:text-dim-body p-2 mb-2 hidden md:flex md:items-center"
       >
-        {image && (
+        {image ? (
           <img src={image} alt={Title} className="h-56 w-56 object-cover" />
+        ): ( 
+        <img src={fallBackImg} alt={Title} className="h-56 w-56 object-cover" />
         )}
+
         <div className="ml-4">
           <div className="md:flex md:items-center">
             <p className="tracking-[.15em] font-bold text-dark dark:text-imagination uppercase text-sm mb-8 md:hidden">
@@ -52,9 +56,13 @@ const PinnedProject = ({ project, userTheme, onEnter, onLeave }) => {
 
       {/* Mobile variant here */}
       <div className="p w-full bg-white dark:bg-dim dark:text-dim-body p-2 mb-8 md:hidden">
-        {image && (
+        {image ? (
           <a href={Link1} target="_blank" rel="noreferrer">
             <img src={image} alt={Title} className="h-56 w-full object-cover" />
+          </a>
+        ): (
+           <a href={Link1} target="_blank" rel="noreferrer">
+            <img src={fallBackImg} alt={Title} className="h-56 w-full object-cover" />
           </a>
         )}
         <div className="mt-3">
