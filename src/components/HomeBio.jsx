@@ -52,7 +52,7 @@ const HomeBoi = ({ userTheme }) => {
 
         {userTheme === 'dark' ? (
           <p className="item mt-4 font-normal mb-6 text-dim-body md:text-[16px]  text-[14px]">
-            A <span className="highlight">Software developer</span> with a
+            An  <span className="highlight">Opensource champion</span> and <span className="highlight">Software developer</span> with a
             passion for
             <span className="highlight "> design</span>. When I'm not coding,
             you'll find me shaking up the scene in southeastern Nigeria,{' '}
@@ -61,7 +61,7 @@ const HomeBoi = ({ userTheme }) => {
           </p>
         ) : (
           <p className="item mt-4 font-normal mb-6 text-dim-body md:text-[16px]  text-[14px]">
-            A <span className="darker font-medium">Software developer</span>{' '}
+            An  <span className="darker font-medium">Opensource champion</span> and <span className="darker font-medium">Software developer</span>{' '}
             with a passion for
             <span className="darker font-medium"> design</span>. When I'm not
             coding, you'll find me shaking up the scene in southeastern Nigeria,{' '}
