@@ -6,7 +6,6 @@ const Talk = ({ talk, userTheme, onTalkEnter, onTalkLeave }) => {
     EventName,
     EventType,
     Date,
-    Status,
     TalkTitle,
     CTA1,
     CTA2,

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import axios from "axios";
 import { gsap } from "gsap";
 import { Route, Switch, Link } from "react-router-dom";
@@ -14,13 +14,27 @@ import close from "./images/icons/close.svg";
 import closeDark from "./images/icons/dark/closeDark.svg";
 import "./App.css";
 
+// AIRTABLE SET UP AND INTEGRATION BEGINS
+const config = {
+  base: process.env.REACT_APP_AIRTABLE_BASE,
+  projectsTable: "Projects",
+  talksTable: "Talks",
+  view: "Main%20View",
+  apiKey: process.env.REACT_APP_AIRTABLE_API_KEY,
+  maxRecords: 3,
+};
+
+const customHeaders = {
+  Authorization: `Bearer ${config.apiKey}`,
+};
+
 function App() {
   const [projects, setProjects] = useState([]);
   const [talks, setTalks] = useState([]);
   const [userTheme, setUserTheme] = useState([]);
 
   const app = useRef();
-  const q = gsap.utils.selector(app);
+  const q = useMemo(() => gsap.utils.selector(app), [app]);
   const t1 = useRef();
 
   // let iconItem = useRef(null);
@@ -204,19 +218,7 @@ function App() {
       });
   };
 
-  // AIRTABLE SET UP AND INTEGRATION BEGINS
-  const config = {
-    base: process.env.REACT_APP_AIRTABLE_BASE,
-    projectsTable: "Projects",
-    talksTable: "Talks",
-    view: "Main%20View",
-    apiKey: process.env.REACT_APP_AIRTABLE_API_KEY,
-    maxRecords: 3,
-  };
-
-  const customHeaders = {
-    Authorization: `Bearer ${config.apiKey}`,
-  };
+  // AIRTABLE INTEGRATION FETCHES
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -313,7 +315,7 @@ function App() {
         },
         "one"
       );
-  }, [userTheme]);
+  }, [userTheme, q]);
 
   // useEffect(() => {
 

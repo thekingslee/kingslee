@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import HomeBio from '../components/HomeBio.jsx';
-import explore from '../images/icons/Planet.svg';
-import exploreDark from '../images/icons/dark/planet.svg';
 
 const Home = ({ userTheme }) => {
   return (

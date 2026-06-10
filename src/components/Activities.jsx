@@ -8,7 +8,6 @@ const Activities = ({
   onActivityEnter,
 }) => {
   const {
-    Type,
     CTA1,
     CTA2,
     Link1,

@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef } from 'react';
+import React from 'react';
 import Button from '../components/Button.jsx';
 import Footer from '../components/Footer.jsx';
 import profile from '../images/kingslee.jpg';
