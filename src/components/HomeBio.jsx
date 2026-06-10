@@ -50,29 +50,19 @@ const HomeBoi = ({ userTheme }) => {
           Hey there, I'm <span className="fancy-text">Kingslee</span>
         </p>
 
+        
+
         {userTheme === 'dark' ? (
           <p className="item mt-4 font-normal mb-6 text-dim-body md:text-[16px]  text-[14px]">
-            An <span className="highlight">Opensource champion</span> and{' '}
-            <span className="highlight">Software developer</span> with a passion
-            for
-            <span className="highlight "> AI & Machine Learning</span>. When I'm
-            not coding, you'll find me shaking up the scene in southeastern
-            Nigeria,{' '}
-            <span className="highlight ">making tech more accessible</span> one
-            event at a time.
+            <span className="highlight">AI/ML Engineer</span> passionate about building intelligent products that bridge cutting-edge 
+            technology and real-world impact. As an <span className="highlight">open-source advocate</span> and <span className="highlight">community builder</span>, 
+            I also lead initiatives that <span className="highlight">make AI and technology more accessible</span> across southeastern Nigeria.
           </p>
         ) : (
-          <p className="item mt-4 font-normal mb-6 text-dim-body md:text-[16px]  text-[14px]">
-            An <span className="darker font-medium">Opensource champion</span>{' '}
-            and <span className="darker font-medium">Software developer</span>{' '}
-            with a passion for
-            <span className="darker font-medium"> AI & Machine Learning</span>.
-            When I'm not coding, you'll find me shaking up the scene in
-            southeastern Nigeria,{' '}
-            <span className="darker font-medium">
-              making tech more accessible
-            </span>{' '}
-            one event at a time.
+           <p className="item mt-4 font-normal mb-6 text-dim-body md:text-[16px]  text-[14px]">
+            <span className="darker font-medium">AI/ML Engineer</span> passionate about building intelligent products that bridge cutting-edge 
+            technology and real-world impact. As an <span className="darker font-medium">open-source advocate</span> and <span className="darker font-medium">community builder</span>, 
+            I also lead initiatives that <span className="darker font-medium">make AI and technology more accessible</span> across southeastern Nigeria.
           </p>
         )}
         <div className="item mx-auto">
